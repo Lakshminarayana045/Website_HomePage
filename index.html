@@ -1,1 +1,639 @@
+<html lang="en">
+    <head>
 
+        <title>Acc </title>
+    </head>
+
+    <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+  <!--Bootstrap Icons-->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.3/font/bootstrap-icons.min.css">
+<!-- Bootstrap 4  -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+    <style>
+
+body{background-image: linear-gradient(45deg,#bf9292,#bcbcda,#fad8de,#bef7be,#e5e5b5);}  
+.one{background-image: linear-gradient(45deg,#cfcff7,#e4bae4,#e6ffc5,#ffb1b1);}  
+.two{background-image: linear-gradient(45deg,#cfcff7,#e4bae4,#e6ffc5,#ffb1b1);
+border-top: 3px solid black;}
+
+.nav-link:hover {background: linear-gradient(to bottom, #33ccff 0%, #ff0066 100%);border-radius: 35px;}
+.lucky{background-image:linear-gradient(45deg,#33ccff 0%, #ff0066);}
+.btn-success {color: #fff;background-color: #dc35c0;border-radius: 35px;border: 1px solid rgba(220, 53, 69, 0.75);  margin-right: 8px;    }
+.btn-danger {color: #f5ecf3;background-color: #ffc107;border-radius: 35px;border: 1px solid rgba(255, 193, 7, 0.75);    }
+img.Mhtech {-webkit-animation: mover 1s infinite  alternate;animation: mover 1s infinite  alternate;}
+img.Mhtech {-webkit-animation: mover 1s infinite  alternate;animation: mover 1s infinite  alternate;}
+@-webkit-keyframes mover {0% { transform: translateY(0); }100% { transform: translateY(-10px); }}
+@keyframes mover { 0% { transform: translateY(0); } 100% { transform: translateY(-10px); }}
+
+
+.hero-text {text-align: center;position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);color: white;}
+.hero-image {background-image: url("images/banner_img.png");
+  background-color: #cccccc;height: 500px; background-position: center;background-repeat: no-repeat;background-size: cover;position: relative;}
+
+
+.img-sec{width: 100%;height: 160px;border-radius: 10px;}
+.nav{ width: 100%; height: 50px; background-color: white; position: sticky; top: 0;}
+nav ul{ display: flex;margin-bottom:10px;padding: 0;float: right;}
+
+
+
+*{margin: 0;padding: 0;box-sizing: border-box;font-family: 'poppins', sans-serif;}
+.main{width: 100%;height: 100vh;background-image: linear-gradient(rgba(12,3,51,0.3),rgba(12,3,51,0.3)),
+    url(https://png.pngtree.com/thumb_back/fh260/background/20220427/pngtree-business-analysis-and-communication-contemporary-marketing-and-software-for-development-image_1090680.jpg);
+    background-position: center;background-size: cover;position: relative;padding: 0 5%;overflow-x: hidden;}
+
+.content{color: yellow;width: 100%;position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);text-align: center;}
+.content h1{font-size: 80px;line-height: 140px;font-weight: 600;opacity: 0;}
+.content p{line-height: 28px;opacity: 0;}
+.links{margin-top: 30px;opacity: 0;}
+.links button {width: 200px;padding: 15px 0; margin: 0 15px; text-align: center;transition: 0.5s;
+    font-weight: 600; position: relative; overflow: hidden; border: 2px solid #f66335;
+    cursor: pointer;color: #fff;border-radius: 25px;background: transparent;}
+.anim{animation: slideUp 1s linear forwards;animation-delay: 1s;}
+@keyframes slideUp{
+    0%{transform: translateY(100px); opacity: 0;}
+    100%{ transform: translateY(0px); opacity: 1; }}
+
+.content button span{background: #f66335;height: 100%;width: 0;border-radius: 25px;position: absolute;
+    left: 0;bottom: 0;z-index: -1;transition: 0.5s;}
+.content button:hover span{width: 100%;}
+.content button:hover{border: 0;}
+footer{width: 100%;background: linear-gradient(to right,#00093c, #2d0b00);
+    color: #fff;padding: 50px 0 30px;font-size: 13px;line-height: 20px;}
+.row{width: 85%;margin: auto;display: flex;flex-wrap: wrap; align-items: flex-start;justify-content: space-between;}
+.col{flex-basis: 25%;padding: 10px;}
+.col:nth-child(2), .col:nth-child(3){flex-basis: 15%;}
+.footer_logo{width: 80px;position: relative;top: -23px;left: -20px;}
+.footer_about{position: relative;top: -23px;}
+.col h3{width: fit-content;margin-bottom: 40px;position: relative;}
+.footer_email{width: fit-content;border-bottom: 1px solid #f66335;margin: 20px 0;}
+.col ul li{list-style: none;margin-bottom: 12px;}
+.col ul li a{text-decoration: none;color: #fff;}
+.col form{padding-bottom: 15px;display: flex;align-items: center;justify-content: space-between;border-bottom: 1px solid #f66335;margin-bottom: 50px;}
+.col form .icon{font-size: 18px;margin-right: 10px;}
+.col form input{width: 100%; background: transparent;color: #ccc;border: 0;outline: none;}
+.col form button{background: transparent;border: 0;outline: none;cursor: pointer;}
+.col form button .icon_right{font-size: 16px;color: #ccc;}
+.col .social_icons .social_icon{width: 30px;height: 30px;border-radius: 50%;text-align: center;
+    line-height: 40px;font-size: 20px;color: #fff;
+    background: #f66335;margin-right: 15px;padding: 5px;cursor: pointer;}
+hr{width: 90%;border: 0;border-bottom: 1px solid #ccc;margin: 20px auto;}
+.bottom_line{width: 100%;height: 5px;background: #767676;border-radius: 3px;
+    position: absolute;top: 25px;left: 0;overflow: hidden;}
+.bottom_line span{width: 15px;height: 100%;background: #f66335;
+    border-radius: 3px;position: absolute;top: 0;left: 10px;animation: moveline 2s linear infinite;}
+@keyframes moveline{
+    0%{left:-20px;}
+    100%{left:100%;}}
+.lucky{background-image:linear-gradient(45deg,#e4bae4,#e6ffc5,#ffb1b1); border: 3px solid black;
+border-radius:50px;}
+        
+
+    </style>
+    <body>
+        <!-- Navbar -->
+        <header>
+            <nav class="navbar navbar-expand-lg one">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="./images/mht.png" alt="" style="width: 90%; height: 90%;"> </a>
+                <ul class="navbar-nav ms-auto">
+        
+                  <!-- join Button-->
+                  <li class="nav-item">
+                    <a class="btn btn-lg" style="border: 3px solid black;border-radius:50px;" href="#"><b> Signup </b></a> 
+                  </li>
+                </ul>
+              </div>
+            </nav>
+        
+            <nav class="navbar navbar-expand-lg two">
+              <div class="container" >
+                <ul class="navbar-nav ms-auto" >
+        
+                  <!--All Navbar  Button-->
+                  <li class="nav-item">
+                    <a class="nav-link active btn  mr-3 ml-3 lucky" aria-current="page" href="#" style="color:black"><b>Home</b></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active btn mr-3 lucky" aria-current="page" href="#" style="color:black"><b>Services</b></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active btn  mr-3 lucky" aria-current="page" href="#" style="color:black"><b>Projects</b></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active btn  mr-3 lucky" aria-current="page" href="#" style="color:black"><b>About Us</b></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active btn  mr-3 lucky" aria-current="page" href="#" style="color:black"><b>Contact Us</b></a>
+                  </li>
+        
+                </ul>
+              </div>
+            </nav>
+          </header>
+        <!-- Navbar end-->
+
+        <!-- Start Banner -->
+        <div class="container-fluid">
+            <div class="hero-image">
+                    <div class="hero-text">
+                        <h3><span span class="theme_color">You only have know one thing</span><br>you can learn anything</h3>
+                        <h4>Free Course</h4>
+                      <a href="" class="btn btn-lg btn-danger text-white" style="border:3px solid black;"><b> Get Started </b>  </a>
+                    </div>
+            </div>
+        
+        </div>
+    
+    <!-- End Banner -->
+
+<!-- ACC Coursed + Paragraph + Google Search Symbol + Image -->
+  <div class="container-fluid" style="background-color: #97e3fc;">
+    <div class="row">
+      <div class="col-md-6" >
+        <h1 class="mt-5 text-center"><b><u> ACC Courses </u> </b> </h1>
+        <p style="font-size:x-large;color:black;" class="mt-3">ACC Course Platform is a remarkable educational resource that offers an extensive
+          range of
+          courses free of charge to students. Developed with the intention of providing accessible and quality education
+          to learners
+          worldwide, this platform has gained recognition for its comprehensive course offerings and user-friendly
+          interface.</p>
+         <div class="text-right">
+            <a href="" class="btn btn-outline-danger btn-lg" style="border-radius:50px; margin-bottom: 10px; border:3px solid black;">About More</a>
+        </div>
+          
+          
+      </div>
+    
+      <!--header back Image -->
+      <div class="col-md-6 mt-5">
+        <img src="./images/hero-img.png" class="Mhtech" alt="" style="height:90%; width: 100%;">
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap Js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+    <!-- END ACC Coursed + Paragraph + Google Search Symbol + Image -->
+
+<!-- section -->
+
+    <div class="container-fluid">
+        <div class="row mt-3 mb-5">
+            <h1 class="text-center mb-4"><u><b>Welcome To Education </b></u> </h1>
+
+            <div class="col-md-5">
+                <div class="full">
+                    <img src="https://media.istockphoto.com/photos/science-technology-concept-education-technology-edtech-picture-id1271697681?b=1&k=20&m=1271697681&s=170667a&w=0&h=6Sysf0tg_AvITtJV-N-DDu-HpT-UuZxF0aAzfY0Y38w=" alt="#" />
+                </div>
+            </div>
+            <div class="col-md-5  mr-5">
+                <p> <b>
+                    Education is a vital aspect of human development, encompassing formal and informal processes that facilitate 
+                    learning, knowledge acquisition, skill development, and personal growth. Formal education takes place in schools, colleges, and 
+                    universities, guided by educators and teachers, following a structured curriculum. It progresses through different levels, preparing 
+                    individuals for professional and personal pursuits. Informal education occurs outside of formal institutions and includes self-directed 
+                    exploration, practical experiences, mentorships, and community involvement. 
+                </b>
+                </p>
+            <div class="text-right"><a class="btn btn-lg btn-outline-primary" href="#" style="border-radius:50px; border: 3px solid black;">About more</a></div>
+                
+ 
+        </div>
+        </div>
+    </div>
+
+<!-- end section -->
+
+<!-- courses -->
+<div class="container" style="border:black solid 3px; border-top-right-radius: 100px; border-bottom-left-radius: 100px;
+background-image:linear-gradient(90deg,#ec7474,#f6f690,#73f079); " >
+    <marquee behavior="alternate" scrollamount=15>
+        <h1 class="mt-2 mb-2" style="margin-top: -1px;" > <b>  Our Courses </b></h1>
+    </marquee>
+</div>
+    <div class="container-fluid">
+        <div class="row mt-3">
+            <div class="offset-md-3 col-md-2">
+                <a class="btn btn-dark btn-lg" href="#" style="border-radius:50px; border: 3px solid black;
+                background-image:linear-gradient(90deg,purple,green);"><b>Frontend </b></a> 
+            </div>
+                <div class="col-md-2">
+                    <a class="btn btn-dark btn-lg " href="#" style="border-radius:50px; border: 3px solid black;
+                    background-image:linear-gradient(90deg,green,purple);"><b>Backend</b> </a>
+                </div>
+                <div class="col-md-2">
+                    <a class="btn btn-dark btn-lg" href="#" style="border-radius:50px; border: 3px solid black;
+                    background-image:linear-gradient(90deg,purple,green);"> <b> Database</b> </a>  
+                </div>
+        </div>
+    </div>
+<div class="container-fluid py-3" >
+        <div class="container py-2">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="rounded overflow-hidden mb-2">
+                        <img class="img-fluid" src="https://codeberryschool.com/blog/wp-content/uploads/2021/08/cover-1.png" class="img-sec img-thumbnail" alt="">
+                        <div class=" p-4">
+                            <div class="d-flex justify-content-between mb-3">
+                                <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>25 Students</small>
+                                <small class="m-0"><i class="far fa-clock text-primary mr-2"></i>01h 30m</small>
+                            </div>
+                            <a class="h5" href="">JavaScript</a>
+                            <div class="border-top mt-4 pt-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
+                                    <h5 class="m-0">10000/-</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="rounded overflow-hidden mb-2">
+                        <img class="img-fluid" src="https://lovast.com/static/images/reactjs/reactjs.jpg" 
+                        class="img-sec img-thumbnail" alt="">
+                        <div class=" p-4">
+                            <div class="d-flex justify-content-between mb-3">
+                                <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>25 Students</small>
+                                <small class="m-0"><i class="far fa-clock text-primary mr-2"></i>01h 30m</small>
+                            </div>
+                            <a class="h5" href="">React</a>
+                            <div class="border-top mt-4 pt-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
+                                    <h5 class="m-0">10000/-</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="rounded overflow-hidden mb-2">
+                        <img class="img-fluid" src="https://wallpapercave.com/wp/wp7732979.jpg" class="img-sec img-thumbnail" alt="">
+                        <div class=" p-4">
+                            <div class="d-flex justify-content-between mb-3">
+                                <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>25 Students</small>
+                                <small class="m-0"><i class="far fa-clock text-primary mr-2"></i>01h 30m</small>
+                            </div>
+                            <a class="h5" href="">Angular</a>
+                            <div class="border-top mt-4 pt-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
+                                    <h5 class="m-0">10000/-</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="rounded overflow-hidden mb-2">
+                        <img class="img-fluid" src="images/html.png" class="img-sec img-thumbnail" alt="">
+                        <div class=" p-4">
+                            <div class="d-flex justify-content-between mb-3">
+                                <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>25 Students</small>
+                                <small class="m-0"><i class="far fa-clock text-primary mr-2"></i>01h 30m</small>
+                            </div>
+                            <a class="h5" href=""> HTML</a>
+                            <div class="border-top mt-4 pt-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
+                                    <h5 class="m-0">10000/-</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="rounded overflow-hidden mb-2">
+                        <img class="img-fluid" src="https://wallpaperaccess.com/full/2987482.png" class="img-sec img-thumbnail" alt="">
+                        <div class=" p-4">
+                            <div class="d-flex justify-content-between mb-3">
+                                <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>25 Students</small>
+                                <small class="m-0"><i class="far fa-clock text-primary mr-2"></i>01h 30m</small>
+                            </div>
+                            <a class="h5" href="">Cascading Style Sheets</a>
+                            <div class="border-top mt-4 pt-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
+                                    <h5 class="m-0">10000/-</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="rounded overflow-hidden mb-2">
+                        <img class="img-fluid" src="images/swift.png" 
+                        class="img-sec img-thumbnail" alt="">
+                        <div class="p-4">
+                            <div class="d-flex justify-content-between mb-3">
+                                <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>25 Students</small>
+                                <small class="m-0"><i class="far fa-clock text-primary mr-2"></i>01h 30m</small>
+                            </div>
+                            <a class="h5" href="">Swift</a>
+                            <div class="border-top mt-4 pt-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
+                                    <h5 class="m-0">10000/-</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+<!--END Courses -->
+
+<!-- faculty -->
+
+<div class="container-fluid">
+    <div class="alert alert-success" style="margin-top:-60px;">
+
+ <h1 class="text-center mb-4" style="margin-top:-1px;"><b><u>Courses Faculties</u></b></h1>
+
+  <div class="row">
+    <div class="col-md-4">
+    <center>
+            <div style="background-color:transparent;border:3px solid black; 
+            border-top-left-radius: 50px; border-bottom-right-radius: 50px;">
+                <h3>JavaScript Faculty</h3>
+              <img src="images/test-5.jpeg" controls width="250" height="200"></img>
+              <h3>Mr.Narayana</h3>
+              <p> Mr.Narayana sir is 5 years of exp</p>
+                <h5>Expert in the JavaScript</h5>
+              </div>
+
+    </center>
+     
+    </div>
+    <div class="col-md-4">
+        <center>
+            <div style="background-color:transparent;border:3px solid black; 
+            border-bottom-right-radius: 50px; border-bottom-left-radius: 50px;">
+                <h3>React Faculty</h3>
+              <img src="images/team-2.jpg" controls width="250" height="200"></img>
+              <h3>Mr.Narayana</h3>
+                <p> Mr.Narayana sir is 5 years of exp</p>
+                <h5>Expert in the React</h5>
+              </div>
+        </center>
+     
+    </div>
+    <div class="col-md-4">
+        <center> <div  style="background-color:transparent;border:3px solid black; 
+            border-top-right-radius: 50px; border-bottom-left-radius: 50px;">
+            <h3>Angular Faculty</h3>
+            <img src="images/team-3.jpg" controls width="250" height="200"></img>
+            <h3>Ms. Lakshmi</h3>
+            <p> Ms. Lakshmi mam is 5 years of exp</p>
+                <h5>Expert in the Angular</h5>
+            </div>
+        </center>
+      
+      </div>
+      </div>
+    <div class="row mt-3">
+      <div class="col-md-4">
+        <center>
+            <div style="background-color:transparent;border:3px solid black; 
+            border-top-right-radius: 50px; border-bottom-left-radius: 50px;">
+                <h3>HTML Faculty</h3>
+                <img src="images/test-6.jpg" controls width="250" height="200"></img>
+                <h3>Mr.Narayana</h3>
+                <p> Mr.Narayana sir is 5 years of exp</p>
+                <h5>Expert in the HTML</h5>
+              </div>
+        </center>
+        
+      </div>
+      <div class="col-md-4">
+        <center>
+            <div style="background-color:transparent;border:3px solid black; 
+            border-top-left-radius: 50px; border-top-right-radius: 50px;">
+                <h3>CSS Faculty</h3>
+                  <img src="images/test-7.jpeg" controls width="250" height="200"></img>
+                  <h3>Mr.Narayana</h3>
+                  <p> Mr.Narayana sir is 5 years of exp</p>
+                  <h5>Expert in the CSS</h5>
+                </div>
+        </center>
+        
+      </div>
+      <div class="col-md-4">
+        <center>
+            <div style="background-color:transparent;border:3px solid black; 
+            border-top-left-radius: 50px; border-bottom-right-radius: 50px;">
+                <h3>Swift Faculty</h3>
+                <img src="images/test-8.jpg"  controls width="250" height="200"></img>
+                <h3>Mr.Narayana</h3>
+                <p> Mr.Narayana sir is 5 years of exp</p>
+                <h5>Expert in the Swift</h5>
+              </div>
+
+        </center>
+        
+      </div>
+    </div>
+  </div>
+<!-- END faculty -->
+<!-- section -->
+    <div class="section margin-top_50 silver_bg">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="mt-3">
+                    <h1 class="text-center"><u> <b>Apply For Admission</b> </u></h1>
+                 </div>
+			    <div class="col-md-6 mt-3">
+                        <img src="https://c1.wallpaperflare.com/preview/803/569/138/application-online-job-application-job-thumbnail.jpg" alt="#"  control width="100%" height="100%"/>
+                    </div>
+                <div class="col-md-6">
+                        <div>
+						  <p class="mt-3"><b>
+                            Applying for admission is the first step towards pursuing education and embarking on a journey of 
+                            knowledge and personal growth. Whether it is a school, college, or university, the admission process 
+                            involves submitting an application that includes personal information, educational background, and 
+                            often additional requirements such as essays, recommendation letters, or standardized test scores. 
+                            This application is carefully reviewed by the institution's admissions committee to assess the 
+                            applicant's suitability and potential. Successful admission opens doors to a world of opportunities, 
+                            providing access to quality education, resources, and a supportive learning environment.
+                        </b>
+                        </p>
+                    </div>
+					<div class="text-right">
+                        <a class="btn btn-outline-info btn-lg " href="#" style="border-radius:50px; border: 3px solid black;">Apply</a>
+                    </div>
+                </div>
+			</div>
+        </div>
+    </div>
+	<!-- end section -->
+
+    <!-- more courses-->
+    <h1 style="text-align: center;" class="mt-5"><u> <b>More Courses </b> </u> </h1>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4" >
+                <h1 class="text-center">Flutter</h1>
+                <div class="jumbotron text-center" style="background-image: linear-gradient(45deg,#9999ed,#acf0a8,#e77a7a);"> 
+                    <img src="https://storage.googleapis.com/cms-storage-bucket/0dbfcc7a59cd1cf16282.png" alt="" 
+                    controls height="40%" width="40%"> 
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <h1 class="text-center"> Typescript </h1>
+                <div class="jumbotron text-center" style="background-image: linear-gradient(90deg,#e77a7a,#9999ed,#acf0a8,#9999ed,#e77a7a);">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1200px-Typescript_logo_2020.svg.png" alt=""
+                controls height="50%" width="50%"> </div>
+            </div>
+            <div class="col-md-4" >
+                <h1 class="text-center"> Svelte </h1>
+                <div class="jumbotron text-center" style="background-image: linear-gradient(45deg,#e77a7a,#acf0a8,#9999ed);">
+                <img src="https://cdn.icon-icons.com/icons2/3387/PNG/512/svelte_icon_212758.png" alt=""
+                controls height="50%" width="50%"> </div>
+            </div>
+            
+        </div>
+        
+            
+    </div>
+    <!-- END more Course-->
+    
+    <!-- section -->
+    <div class="main">
+        <div class="content">
+            <h1 class="anim">We Prepare Innovative Solutions for Problems</h1>
+            <p class="anim">Software Solution, Embedded Solution, Education Solution.</p>
+            <div class="links anim">
+               <button><span></span>Free Images</button>
+               <button><span></span>Image API</button>
+            </div>
+        </div>
+    </div>
+
+    <!--end section -->
+
+
+    <!-- section -->
+    
+    <div class="" style="background:#12385b;">
+        <div class="container-fluid mt-1">
+               <div class="row">
+                <div>
+                    <h1 class="text-center text-white mt-2 mb-3"><u> <b>Contact</b> </u></h1>
+                </div>
+                 <div class="col-md-6 mb-5 ">
+				
+                        <img src="images/img10.png" alt="#" control height="100%" width="100%" class="img-thumbnail">
+                 
+                 </div>
+				 <div class="col-md-6" style="margin-top: 10px;">
+				 <center>
+                    <form action="">
+						       
+                        <input type="text" placeholder="Your Name" name="your name" class="form-control mb-3" />
+                        <input type="email" placeholder="Email Address" name="Email" class="form-control mb-3" /> 
+                        <input type="number" placeholder="Phone Number" name="Phone number" class="form-control mb-3" />
+                        <textarea placeholder="Message" style="height: 100px; width:500px;"></textarea><br>
+                  
+                        <center>
+                            <input type="submit" name="Search" class="btn btn-lg btn-danger mt-3 mb-2"><br>
+                        </center>
+                     </div>
+                    </form>
+                 </center>
+					</div>
+                 </div>
+               </div>			  
+         
+	<!-- end section -->
+
+    <!-- footer -->
+
+    <footer class="mt-1">
+        <div class="row">
+            <div class="col">
+               <img src="https://www.mhtechin.in/images/mht.png" 
+                control height="50%" width="50%" class="mb-5"> 
+                <P class="footer_about">Our team uses the latest tools and technologies to deliver websites that are efficient, 
+                    effective, and user-friendly. We specialize in creating responsive websites that look great on all devices, 
+                    from desktops to mobile phones. We also offer website maintenance services to ensure 
+                    that your website is always up-to-date and running smoothly.  
+                </p>
+                
+            </div>
+            <div class="col">
+                <h3>Office <div class="bottom_line mt-2"><span></span></div></h3>
+                <p>Kanchanwadi,Aurangabad,</p>
+                <p>Maharashtra, ZIP 431136, India</p>
+                <p class="footer_email">contact@mhtechin.in</p>
+                <h6>+91 - 7397831553</h6>
+            </div>
+            <div class="col">
+                <h3>Links <div class="bottom_line mt-2"><span></span></div></h3>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">SERVICE</a></li>
+                    <li><a href="">CONTACT US</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>Newsletter <div class="bottom_line mt-2"><span></span></div></h3>
+                <form>
+                    <ion-icon class="icon" name="mail"></ion-icon>
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit"><ion-icon class="icon_right" name="arrow-round-forward"></ion-icon></button>
+                </form>
+                <div class="social_icons">
+                    <ion-icon class="social_icon" name="logo-whatsapp"></ion-icon>
+                    <ion-icon class="social_icon" name="logo-instagram"></ion-icon>
+                    <ion-icon class="social_icon" name="logo-skype"></ion-icon>
+                    <ion-icon class="social_icon" name="logo-facebook"></ion-icon>
+                    <ion-icon class="social_icon" name="logo-twitter"></ion-icon>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center">
+            <marquee behavior="alternate" scrollamount=10>
+                <h1 class=" mt-3" > <b>  24/7 Contact Support-MHTECHIN </b></h1>
+            </marquee>
+        
+        </div>
+
+       
+    <hr>
+     </footer> 
+    <!--END footer -->
+    </body>
+</html>
